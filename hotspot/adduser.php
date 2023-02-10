@@ -126,7 +126,7 @@ if (!isset($_SESSION["mikhmon"])) {
 		</td>
 	</tr>
 	<tr>
-    <td class="align-middle"><?= $_time_limit ?></td><td><input class="form-control" type="text"  autocomplete="off" name="timelimit" value="" placeholder="contoh : 30d"></td>
+    <td class="align-middle"><?= $_time_limit ?></td><td><input class="form-control" type="text"  autocomplete="off" name="timelimit" value="30d"></td>
   </tr>
   <tr>
     <td class="align-middle"><?= $_data_limit ?></td><td>

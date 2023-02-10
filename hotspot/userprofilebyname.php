@@ -238,7 +238,7 @@ if (!isset($_SESSION["mikhmon"])) {
     </td>
   </tr>
   <tr id="validity" <?php if ($getexpmodet == "None") {echo 'style="display:none;"';}?>>
-    <td><?= $_validity ?></td><td><input class="form-control" type="text" id="validi" size="4" autocomplete="off" name="validity" value="<?= $getvalid; ?>" required="1"></td>
+    <td><?= $_validity ?></td><td><input class="form-control" type="text" id="validi" size="4" autocomplete="off" name="validity" value="30d" required="1"></td>
   </tr>
   <tr>
     <td><?= $_lock_user ?></td><td>
