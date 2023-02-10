@@ -1,0 +1,4 @@
+#Jekyll configuration
+url: "https://github.com/OhmGun"
+title: Changelog V3	
+highlighter: rouge
