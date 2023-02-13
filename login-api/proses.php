@@ -9,9 +9,7 @@ $ip_mikrotik    = "202.51.121.195";
 if($API->connect($ip_mikrotik, $user_mikrotik, $password_mikrotik)){
 $username 	= $_POST['username'];
 $password 	= $_POST['password'];
-/*
 $mac	  	= $_POST['mac'];
-*/
 $profile	= $_POST['profile'];
 	try {
 	$cekuser = $API->comm('/ip/hotspot/user/print',array(
@@ -23,12 +21,9 @@ $profile	= $_POST['profile'];
     $API->comm("/ip/hotspot/user/add", array(
 			"server"		=> "247-jogjaNet",
 			"profile"		=> $profile,
-			"name"     		=> "$username",
+			"name"     		=> $username,
 			"password"		=> $password,
-			/*
-			"mac-address"	=> $mac,		
-			*/
-			"comment"		=> "Divisi - $profile",
+			"comment"		=> "Divisi - $profile | Mac-Address Utama : $mac",
 			"disabled"		=> "yes"
 			));
     echo "<script>window.location='http://solusi247-wifi.net/sukses.html'</script>";

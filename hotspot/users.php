@@ -227,7 +227,7 @@ for ($i = 0; $i < $TotalReg; $i++) {
   echo "<td style=' text-align:right'>" . $ubyteso . "</td>";
   echo "<td>";
   if ($uname == "default-trial") {
-  } else if (substr($ucomment,0,3) == "Divisi - " || substr($ucomment,0,3) == "Divisi - ") {
+  } else if (substr($ucomment,0,3) == "" || substr($ucomment,0,3) == "") {
     echo "<a href=./?hotspot=users&comment=" . $ucomment . "&session=" . $session . " title='Filter by " . $ucomment . "'><i class='fa fa-search'></i> ". $ucomment." ". $udatalimit ." ".$utimelimit . "</a>";
   } else if ($utimelimit == ' expired') {
     echo "<a href=./?hotspot=users&profile=all&exp=1&session=" . $session . " title='Filter by expired'><i class='fa fa-search'></i> " . $ucomment." ". $udatalimit ." ".$utimelimit . "</a>";
